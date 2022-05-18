@@ -1,4 +1,4 @@
-# Projeto MelanPhone <img width='70px' src='Images\MelanPhone.png' style='margin=0;'>
+# Projeto MelanPhone <img width='70px' src='Images\MelanPhone icon.png' style='margin=0;'>
 
 O jogo consiste em um **simulador de smartphone** baseado nos dispositivos da Apple, onde o objetivo é **remover um vírus ransonware** do celular. Com a ajuda do **assistente virtual, Melan**, o jogador utiliza os aplicativos fictícios do game para concluí-lo. 🎮
 
