@@ -1,0 +1,1762 @@
+[gd_scene load_steps=73 format=2]
+
+[ext_resource path="res://Scenes/Capítulo 1 - oi.gd" type="Script" id=1]
+[ext_resource path="res://Images/Tela/Tela Inicial/1. TELA INCIAL - ZERADA.png" type="Texture" id=2]
+[ext_resource path="res://Images/Tela/Tela Inicial/2. TELA INICIAL - COM JOGO.png" type="Texture" id=3]
+[ext_resource path="res://Images/Tela/Tela Inicial/3. TELA INICIAL - COM ANTIVIRUS E JOGO.png" type="Texture" id=4]
+[ext_resource path="res://Images/ShapeTitulo.png" type="Texture" id=5]
+[ext_resource path="res://Images/Tela/Melan!/1. Olá, sou o Melan!/1/2.png" type="Texture" id=6]
+[ext_resource path="res://Images/Tela/Melan!/1. Olá, sou o Melan!/1/1.png" type="Texture" id=7]
+[ext_resource path="res://Images/Tela/Melan!/1. Olá, sou o Melan!/2/1.png" type="Texture" id=8]
+[ext_resource path="res://Images/Tela/Melan!/1. Olá, sou o Melan!/2/2.png" type="Texture" id=9]
+[ext_resource path="res://Images/Tela/Melan!/1. Olá, sou o Melan!/3/1.png" type="Texture" id=10]
+[ext_resource path="res://Images/Tela/Melan!/1. Olá, sou o Melan!/3/2.png" type="Texture" id=11]
+[ext_resource path="res://Images/Tela/Melan!/2. Ransomware!/1/1.png" type="Texture" id=12]
+[ext_resource path="res://Images/Tela/Melan!/2. Ransomware!/1/2.png" type="Texture" id=13]
+[ext_resource path="res://Images/Tela/Melan!/2. Ransomware!/2/1.png" type="Texture" id=14]
+[ext_resource path="res://Images/Tela/Melan!/2. Ransomware!/2/2.png" type="Texture" id=15]
+[ext_resource path="res://Images/Tela/Melan!/3. Antivirus, Awake!/1/1.png" type="Texture" id=16]
+[ext_resource path="res://Images/Tela/Melan!/3. Antivirus, Awake!/1/2.png" type="Texture" id=17]
+[ext_resource path="res://Images/Tela/Melan!/3. Antivirus, Awake!/2/1.png" type="Texture" id=18]
+[ext_resource path="res://Images/Tela/Melan!/3. Antivirus, Awake!/2/2.png" type="Texture" id=19]
+[ext_resource path="res://Images/Tela/Melan!/4. Adeus!/1.png" type="Texture" id=20]
+[ext_resource path="res://Images/Tela/Melan!/4. Adeus!/2.png" type="Texture" id=21]
+[ext_resource path="res://Images/Clique.png" type="Texture" id=22]
+[ext_resource path="res://Images/Tela/Navegador/1.png" type="Texture" id=23]
+[ext_resource path="res://Scenes/DOWNLOAD.gd" type="Script" id=24]
+[ext_resource path="res://Images/Tela/Navegador/AppLoja.png" type="Texture" id=25]
+[ext_resource path="res://Scenes/downloadjas.gd" type="Script" id=26]
+[ext_resource path="res://Images/Tela/erro.png" type="Texture" id=27]
+[ext_resource path="res://Images/Tela/Navegador/Instalado.png" type="Texture" id=28]
+[ext_resource path="res://Images/Tela/Melan!/Melan.png" type="Texture" id=29]
+[ext_resource path="res://Scenes/Oi, melan!.gd" type="Script" id=30]
+[ext_resource path="res://Scenes/Voltar.gd" type="Script" id=31]
+[ext_resource path="res://Scenes/Navegador.gd" type="Script" id=32]
+[ext_resource path="res://Scenes/Menu.gd" type="Script" id=33]
+[ext_resource path="res://Scenes/FlappyBeans.gd" type="Script" id=34]
+[ext_resource path="res://Scenes/lojaa.gd" type="Script" id=35]
+[ext_resource path="res://Scenes/Antivirus.gd" type="Script" id=36]
+[ext_resource path="res://Scenes/Tela Celular.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Images/Tela/Navegador/ATAQUE.png" type="Texture" id=38]
+[ext_resource path="res://Images/Tela/Killer/1.png" type="Texture" id=39]
+[ext_resource path="res://Scenes/limpeza.gd" type="Script" id=40]
+[ext_resource path="res://Images/Tela/Killer/2.png" type="Texture" id=41]
+[ext_resource path="res://Scenes/Buttoasdasn.gd" type="Script" id=42]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "melan",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Melan",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 22 ), null, null ],
+"loop": true,
+"name": "New Anim",
+"speed": 3.0
+} ]
+
+[sub_resource type="Animation" id=10]
+resource_name = "1"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan2:position")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 250, 460 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Melan1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 250, -336.093 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Navegador:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "2"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan2:position")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 250, -336.093 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Melan3:position")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 250, 460 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "3"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan3:position")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 250, -336.093 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Melan4R:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 250, 460 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan4R:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.00840679, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 460 ), Vector2( 250, 470 ), Vector2( 250, -336.093 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Clique:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.0154887, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Voltar:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Navegador:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.7 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "5"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 159 ), Vector2( 250, 159 ), Vector2( 250, 49 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 180.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Melan5R:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1, 1.4, 1.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, -336.093 ), Vector2( 250, 470 ), Vector2( 250, 460 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Voltar:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Oi, melan!:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.0159871 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "6"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 159 ), Vector2( 250, 159 ), Vector2( 250, 49 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 180.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Melan6V:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1, 1.3, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, -336.093 ), Vector2( 250, 470 ), Vector2( 250, 460 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Voltar:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Oi, melan!:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.0125717 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Tela Bean:visible")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.0145981 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../instalado:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.0145981, 0.6, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 849.416 ), Vector2( 250, 765.2 ), Vector2( 250, 765.2 ), Vector2( 250, 849.416 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Menu:disabled")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.00320012, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../ColorRect/DOWNLOAD:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../ColorRect3/downloadjas:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=17]
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect2:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.0139472, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 400, 310 ), Vector2( 20, 100 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../ColorRect2:rect_scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.0139472, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.01, 0.01 ), Vector2( 0.239, 0.24 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../FlappyBeans:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../ColorRect2/erro:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.00387705, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../Menu:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "LimpezaFeita"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../../ColorRect2:rect_position")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 8, 90 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../MelanFim:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 249.384, 445.507 ), Vector2( 250, 460 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../MelanFim:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.0290856, 0.0306295 ), Vector2( 0.239, 0.24 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Voltar:disabled")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../../Button:disabled")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../../Button:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 1.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 19.6899, 100 ), Vector2( 19.6899, 106 ), Vector2( 19.6899, -683 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Menu:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.9, 1.3, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 49 ), Vector2( 250, 162 ), Vector2( 250, 159 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Oi, melan!:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.00616471 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath(".:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.7 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=20]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect:rect_scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.00344349, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.01, 0.01 ), Vector2( 0.239, 0.24 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../ColorRect:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.0139328, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 400, 740 ), Vector2( 19.6899, 100 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Navegador:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.0144818, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Clique:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=21]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan1:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1.3, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, -344 ), Vector2( 250, 460 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 159 ), Vector2( 250, 159 ), Vector2( 250, 49 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:rotation_degrees")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 180.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Voltar:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.00792814, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Oi, melan!:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.00616471 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "antivirus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("../../ColorRect:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.0133126, 0.996202 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 74.6003, 433.111 ), Vector2( 8, 93 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../../ColorRect:rect_size")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.0133126, 0.996202 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 30, 45 ), Vector2( 480, 720 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../../ColorRect/ATAQUE2:visible")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.988538 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../../ColorRect/ColorRect:visible")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.988538 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../Antivirus:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.992358 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../../ColorRect/ATAQUE2/limpeza:disabled")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.990941 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=23]
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect3:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 20, 100 ), Vector2( 20, 110 ), Vector2( 20, -900 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Menu:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Clique3:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Tela Anti:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=24]
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan5R:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 460 ), Vector2( 250, 470 ), Vector2( 250, -330 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Voltar:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Clique2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.8 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../FlappyBeans:disabled")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.991912 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=25]
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect2:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 20, 100 ), Vector2( 20, 110 ), Vector2( 20, -700 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../../ATAQUE:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 1.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 260, 470 ), Vector2( 250, 460 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../../ATAQUE:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1, 1.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.0164662, 0.0165351 ), Vector2( 0.239, 0.24 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1.7, 2, 2.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 49 ), Vector2( 250, 165 ), Vector2( 250, 159 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath(".:rotation_degrees")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1.7 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../Menu:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Oi, melan!:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 2.49063 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("../Clique2:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=26]
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.0022345, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 176.567, 173.973 ), Vector2( 20, 100 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../ColorRect3:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.0022345, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 164, 225 ), Vector2( 1925, 2958 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../ColorRect3/loja:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../ColorRect3/loja:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../ColorRect3/loja:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../ColorRect3/downloadjas:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5, 0.989583 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("../lojaa:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.00585663 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=27]
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../../ATAQUE:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Menu:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Clique2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Melan7V:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.9, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 249.938, 443.619 ), Vector2( 250, 460 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../Melan7V:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.9, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.0153042, 0.015962 ), Vector2( 0.239, 0.24 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../Voltar:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=28]
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan6V:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.00513453, 0.5, 0.996164 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 460 ), Vector2( 250, 470 ), Vector2( 250, -340 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Menu:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Voltar:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.0144735 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=29]
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Melan7V:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 460 ), Vector2( 250, 470 ), Vector2( 250, -400 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Clique3:visible")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.997923 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../lojaa:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.984921 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Voltar:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../Antivirus:disabled")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.987395 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=30]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprites/Chamar melan:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 250, 48 ), Vector2( 250, 159 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprites/Chamar melan:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[node name="Capítulo 1 - oi" type="Node2D"]
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 1 )
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="Tela Zerada" type="Sprite" parent="Sprites"]
+position = Vector2( 250, 460 )
+scale = Vector2( 0.239159, 0.240131 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tela Bean" type="Sprite" parent="Sprites"]
+visible = false
+position = Vector2( 250, 460 )
+scale = Vector2( 0.239159, 0.240131 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tela Anti" type="Sprite" parent="Sprites"]
+visible = false
+position = Vector2( 250, 460 )
+scale = Vector2( 0.239159, 0.240131 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Horário" type="Sprite" parent="Sprites"]
+position = Vector2( 250, 130 )
+scale = Vector2( 0.221252, 0.222151 )
+z_index = 1
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Melan1" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 250, -344 )
+scale = Vector2( 0.239159, 0.240131 )
+z_index = 2
+frames = SubResource( 1 )
+animation = "melan"
+frame = 2
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Melan2" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 1075.69, 285.02 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 2
+frames = SubResource( 2 )
+animation = "Melan"
+frame = 17
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Melan3" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 938.983, 227.605 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 2
+frames = SubResource( 3 )
+frame = 3
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Melan4R" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 1240.43, -6.54628 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 2
+frames = SubResource( 4 )
+frame = 2
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Melan5R" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 776.848, 13.8331 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 2
+frames = SubResource( 5 )
+frame = 10
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Melan6V" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 250, -340 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 2
+frames = SubResource( 6 )
+frame = 1
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Melan7V" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 250, -400 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 2
+frames = SubResource( 7 )
+frame = 5
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MelanFim" type="AnimatedSprite" parent="Sprites"]
+position = Vector2( 906.907, 351.578 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 2
+frames = SubResource( 8 )
+playing = true
+
+[node name="Clique" type="AnimatedSprite" parent="Sprites"]
+visible = false
+position = Vector2( 412, 752.94 )
+scale = Vector2( 0.239, 0.24 )
+frames = SubResource( 9 )
+animation = "New Anim"
+frame = 2
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Clique2" type="AnimatedSprite" parent="Sprites"]
+visible = false
+position = Vector2( 409.799, 325.599 )
+scale = Vector2( 0.252479, 0.253535 )
+frames = SubResource( 9 )
+animation = "New Anim"
+frame = 1
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Clique3" type="AnimatedSprite" parent="Sprites"]
+visible = false
+position = Vector2( 196.052, 200.009 )
+scale = Vector2( 0.252479, 0.253535 )
+frames = SubResource( 9 )
+animation = "New Anim"
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Sprites"]
+margin_left = 1319.27
+margin_top = 434.504
+margin_right = 3244.27
+margin_bottom = 3392.5
+rect_scale = Vector2( 0.239, 0.24 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Navegador" type="Sprite" parent="Sprites/ColorRect"]
+position = Vector2( 962.344, 1073 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DOWNLOAD" type="Button" parent="Sprites/ColorRect"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 628.0
+margin_top = 1921.0
+margin_right = 1297.0
+margin_bottom = 2135.0
+script = ExtResource( 24 )
+
+[node name="ColorRect3" type="ColorRect" parent="Sprites"]
+margin_left = 20.0
+margin_top = -900.0
+margin_right = 1945.0
+margin_bottom = 2058.0
+rect_scale = Vector2( 0.239, 0.24 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="loja" type="Sprite" parent="Sprites/ColorRect3"]
+position = Vector2( 963.877, 1397.47 )
+texture = ExtResource( 25 )
+
+[node name="downloadjas" type="Button" parent="Sprites/ColorRect3"]
+self_modulate = Color( 0.796078, 0.270588, 0.270588, 0 )
+margin_left = 992.849
+margin_top = 1370.82
+margin_right = 1689.85
+margin_bottom = 1519.82
+disabled = true
+script = ExtResource( 26 )
+
+[node name="ColorRect2" type="ColorRect" parent="Sprites"]
+margin_left = 20.0
+margin_top = -700.0
+margin_right = 1945.0
+margin_bottom = 2258.0
+rect_scale = Vector2( 0.0107179, 0.010721 )
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="erro" type="Sprite" parent="Sprites/ColorRect2"]
+visible = false
+position = Vector2( 962.343, 1500 )
+texture = ExtResource( 27 )
+
+[node name="instalado" type="Sprite" parent="Sprites"]
+position = Vector2( 250, 849.416 )
+scale = Vector2( 0.239, 0.224962 )
+texture = ExtResource( 28 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Chamar melan" type="Sprite" parent="Sprites"]
+position = Vector2( 766.597, 162.189 )
+scale = Vector2( 0.200125, 0.200125 )
+z_index = 2
+texture = ExtResource( 29 )
+
+[node name="Oi, melan!" type="Button" parent="Sprites/Chamar melan"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = -150.0
+margin_top = -100.0
+margin_right = 150.0
+margin_bottom = 100.0
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprites/Chamar melan"]
+anims/1 = SubResource( 10 )
+anims/2 = SubResource( 11 )
+anims/3 = SubResource( 12 )
+anims/4 = SubResource( 13 )
+anims/5 = SubResource( 14 )
+anims/6 = SubResource( 15 )
+anims/Download = SubResource( 16 )
+anims/FlappyBean = SubResource( 17 )
+anims/LimpezaFeita = SubResource( 18 )
+anims/NavegadorClose = SubResource( 19 )
+anims/NavegadorOpen = SubResource( 20 )
+anims/OiMelan = SubResource( 21 )
+anims/antivirus = SubResource( 22 )
+"anims/close loja" = SubResource( 23 )
+anims/close5 = SubResource( 24 )
+anims/closebean = SubResource( 25 )
+anims/loja = SubResource( 26 )
+anims/tchaurans = SubResource( 27 )
+anims/volta6 = SubResource( 28 )
+anims/voltaporra = SubResource( 29 )
+
+[node name="Voltar" type="Button" parent="Sprites"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 210.0
+margin_top = 742.667
+margin_right = 300.0
+margin_bottom = 782.667
+script = ExtResource( 31 )
+
+[node name="Navegador" type="Button" parent="Sprites"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 367.068
+margin_top = 707.821
+margin_right = 457.068
+margin_bottom = 795.821
+disabled = true
+script = ExtResource( 32 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Menu" type="Button" parent="Sprites"]
+margin_left = 220.0
+margin_top = 820.0
+margin_right = 290.0
+margin_bottom = 890.0
+disabled = true
+script = ExtResource( 33 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FlappyBeans" type="Button" parent="Sprites"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 367.0
+margin_top = 280.0
+margin_right = 457.0
+margin_bottom = 380.0
+disabled = true
+script = ExtResource( 34 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lojaa" type="Button" parent="Sprites"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 150.023
+margin_top = 157.056
+margin_right = 242.023
+margin_bottom = 245.056
+disabled = true
+script = ExtResource( 35 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Antivirus" type="Button" parent="Sprites"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 45.0022
+margin_top = 405.853
+margin_right = 136.002
+margin_bottom = 490.853
+disabled = true
+script = ExtResource( 36 )
+
+[node name="Tela Celular" parent="." instance=ExtResource( 37 )]
+z_index = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/CallMelan = SubResource( 30 )
+
+[node name="ATAQUE" type="Sprite" parent="."]
+position = Vector2( 1453.08, 515.948 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 1
+texture = ExtResource( 38 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 636.209
+margin_top = 268.388
+margin_right = 1116.21
+margin_bottom = 988.388
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ATAQUE2" type="Sprite" parent="ColorRect"]
+visible = false
+position = Vector2( 242.346, 360.24 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 1
+texture = ExtResource( 39 )
+
+[node name="limpeza" type="Button" parent="ColorRect/ATAQUE2"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = -721.0
+margin_top = 453.0
+margin_right = 698.0
+margin_bottom = 1207.0
+script = ExtResource( 40 )
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect"]
+visible = false
+margin_right = 483.0
+margin_bottom = 57.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+editor/display_folded = true
+margin_left = 604.319
+margin_top = -12.0439
+margin_right = 1084.32
+margin_bottom = 707.956
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ATAQUE2" type="Sprite" parent="ColorRect2"]
+position = Vector2( 242.346, 360.24 )
+scale = Vector2( 0.239, 0.24 )
+z_index = 1
+texture = ExtResource( 41 )
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect2"]
+margin_left = -3.14813
+margin_top = 0.109619
+margin_right = 479.852
+margin_bottom = 57.1096
+color = Color( 0, 0, 0, 1 )
+
+[node name="Button" type="Button" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 185.911
+margin_top = 736.644
+margin_right = 337.911
+margin_bottom = 824.644
+rect_scale = Vector2( 0.793639, 0.666729 )
+disabled = true
+script = ExtResource( 42 )
+
+[node name="Timer" type="Timer" parent="Button"]
+wait_time = 0.2
+[connection signal="button_up" from="Sprites/ColorRect/DOWNLOAD" to="Sprites/ColorRect/DOWNLOAD" method="_on_DOWNLOAD_button_up"]
+[connection signal="pressed" from="Sprites/ColorRect3/downloadjas" to="Sprites/ColorRect3/downloadjas" method="_on_downloadjas_pressed"]
+[connection signal="pressed" from="Sprites/Chamar melan/Oi, melan!" to="Sprites/Chamar melan/Oi, melan!" method="_on_Oi_melan_pressed"]
+[connection signal="pressed" from="Sprites/Voltar" to="Sprites/Voltar" method="_on_Voltar_pressed"]
+[connection signal="pressed" from="Sprites/Navegador" to="Sprites/Navegador" method="_on_Navegador_pressed"]
+[connection signal="button_up" from="Sprites/Menu" to="Sprites/Menu" method="_on_Menu_button_up"]
+[connection signal="pressed" from="Sprites/FlappyBeans" to="Sprites/FlappyBeans" method="_on_FlappyBeans_pressed"]
+[connection signal="pressed" from="Sprites/lojaa" to="Sprites/lojaa" method="_on_lojaa_pressed"]
+[connection signal="pressed" from="Sprites/Antivirus" to="Sprites/Antivirus" method="_on_Antivirus_pressed"]
+[connection signal="pressed" from="ColorRect/ATAQUE2/limpeza" to="ColorRect/ATAQUE2/limpeza" method="_on_limpeza_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="timeout" from="Button/Timer" to="." method="_on_Timer_timeout"]
