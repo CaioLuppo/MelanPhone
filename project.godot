@@ -16,6 +16,7 @@ _global_script_class_icons={
 
 config/name="MelanPhone"
 run/main_scene="res://Scenes/Inicialização do Celular.tscn"
+config/icon="res://Images/MelanPhone icon.png"
 
 [display]
 
