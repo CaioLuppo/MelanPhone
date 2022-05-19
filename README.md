@@ -2,7 +2,7 @@
 
 O jogo consiste em um **simulador de smartphone** baseado nos dispositivos da Apple, onde o objetivo é **remover um vírus ransonware** do celular. Com a ajuda do **assistente virtual, Melan**, o jogador utiliza os aplicativos fictícios do game para concluí-lo. 🎮
 
-
+⬇ **Link para as versões do jogo:** https://github.com/CaioLuppo/MelanPhone/releases
 
 <br>
 
